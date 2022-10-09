@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.container-carousel{
+    display: flex;
+}
+
+.container-carousel .carousel{
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    display: none;
+    padding-top: 100px;
+}
+
+.container-carousel .carousel.ativa{
+    display: block;
+}
+
+.container-carousel .carousel.fundo-rosas{
+    background-image: url(../estilo/imagens/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel.fundo-rosas-amarela{
+    background-image: url(../estilo/imagens/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel.fundo-motanhas{
+    background-image: url(../estilo/imagens/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel.fundo-lago{
+    background-image: url(../estilo/imagens/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-carousel .carousel .texto{
+    background: #fff;
+    max-width: 45rem;
+    border-radius: .5rem;
+    padding: 3.7rem;
+    margin-left: 150px;
+}
+
+.container-carousel .carousel .texto .titulo{
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.container-carousel .carousel .texto .paragrafo{
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 3rem 0;
+}
+
+.container-carousel .carousel .texto .botao-vermelho{
+    color: #C50000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .carousel .texto .botao-amarelo{
+    color:#D9DD10;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .carousel .texto .botao-marrom{
+    color: #A63A17;;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .carousel .texto .botao-azul{
+    color: #10ACDD;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container-carousel .avancar{
+    height: 6.5rem;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    cursor: pointer;
+    z-index: 99;
+}
+
+.container-carousel .voltar{
+    height: 6.5rem;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%) rotate(180deg);
+    cursor: pointer;
+    z-index: 99;
+}
+
+@media(max-width:768px){
+    .container-carousel .carousel.ativa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-carousel .carousel .texto{
+        max-width: 38rem;
+        margin: 0;
+        padding: 2.5rem;
+    }
+
+    .container-carousel .carousel .texto .titulo{
+        font-size: 3rem;
+    }
+
+    .container-carousel .carousel .texto .paragrafo{
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:520px){
+    .container-carousel .carousel .texto{
+        max-width: 30rem;
+        margin: 0;
+        padding: 2.5rem;
+    }
+}
+
+@media(max-width:425px){
+
+    .container-carousel .carousel .texto{
+        padding: 2rem;
+    }
+
+    .container-carousel .carousel .texto .titulo{
+        font-size: 2.5rem;
+    }
+
+    .container-carousel .carousel .texto .paragrafo{
+        margin: .5rem;
+        font-size: 1.4rem;
+    }
+
+    .container-carousel .avancar{
+        height: 4.5rem;
+    }
+    
+    .container-carousel .voltar{
+        height: 4.5rem;
+    }
+}
+
+@media(max-width:375px){
+    .container-carousel .carousel .texto{
+        max-width: 25rem;
+        margin: 0;
+        padding: 2rem;
+    }
+}

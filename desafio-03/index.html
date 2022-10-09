@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/reset/reset.css">
+    <link rel="stylesheet" href="src/global/global.css">
+    <link rel="stylesheet" href="src/estilo/style.css">
+    
+    <title>Validação de Formulário</title>
+</head>
+<body>
+    <main class="principal">
+        <section class="container-formulario">
+            <div class="descricao">
+                <h1 class="titulo"><span>FICOU COM DÚVIDA?</span>NOS MANDE UMA MENSAGEM!</h1>
+                <p class="paragrafo">caso tenha ficado com qualquer dúvida basta <br> nos mandar uma mensagem e entraremos <br> em contato em menos de 24h.</p>
+            </div>
+
+            <form action="index.html" class="formulario">
+                <div class="box-input">
+                    <input type="text" id="nome" placeholder="Nome completo *">
+                    <span class="aviso"></span>
+                </div>
+                <div class="box-input">
+                    <input type="email" id="email" placeholder="Email *">
+                    <span class="aviso"></span>
+                </div>
+                <div class="box-input">
+                    <input type="tel" id="telefone" placeholder="Telefone *">
+                    <span class="aviso"></span>
+                </div>
+                <div class="box-input">
+                    <textarea id="texto" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+                    <span class="aviso"></span>
+                </div>
+                <span class="campoObrigatorio">*campos obrigatórios</span>
+                <button class="btnEnviar" id="btnEnviar" value="Enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
